@@ -7,14 +7,16 @@ import Card from "../Components/Card/Card";
 import Contact from "../Components/ContactUs/Contact";
 import Footer from "../Components/Footer/Footer";
 import founderImg from "../assets/founderpic.jpg";
+import slide1 from "../../src/assets/slide1.png";
+import slide2 from "../../src/assets/slide2.png";
+import slide3 from "../../src/assets/slide3.png";
+import slide4 from "../../src/assets/slide4.png";
+import slide5 from "../../src/assets/slide5.png";
+import crowdImg from "../../src/assets/crowd.png";
+import soilImg from "../../src/assets/soil.jpg";
+import cloudsImg from "../../src/assets/clouds.png";
 
-const colorClasses = [
-  "bg-[url('../../src/assets/slide1.png')]",
-  "bg-[url('../../src/assets/slide2.png')]",
-  "bg-[url('../../src/assets/slide3.png')]",
-  "bg-[url('../../src/assets/slide4.png')]",
-  "bg-[url('../../src/assets/slide5.png')]",
-];
+const colorClasses = [slide1, slide2, slide3, slide4, slide5];
 
 const LandingPage = memo(() => {
   const [currentBackgroundImage, setCurrentBackgroundImage] = useState(
@@ -85,7 +87,8 @@ const LandingPage = memo(() => {
       </div>
 
       <div
-        className={` flex flex-col justify-center  items-center text-center gap-20 md:gap-40 bg-[url('../../src/assets/crowd.png')] bg-cover relative p-10 min-h-screen`}
+        style={{ backgroundImage: `url(${crowdImg})` }}
+        className={` flex flex-col justify-center  items-center text-center gap-20 md:gap-40  bg-cover relative p-10 min-h-screen`}
       >
         <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
         {/* Overlay */}
@@ -109,7 +112,8 @@ const LandingPage = memo(() => {
         </div>
       </div>
       <div
-        className={`flex relative flex-col gap-20 md:gap-40 bg-[url('../../src/assets/soil.jpg')] bg-cover p-10 min-h-screen`}
+        style={{ backgroundImage: `url(${soilImg})` }}
+        className={`flex relative flex-col gap-20 md:gap-40  bg-cover p-10 min-h-screen`}
       >
         {" "}
         <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
@@ -126,13 +130,15 @@ const LandingPage = memo(() => {
         </div>
       </div>
       <div
-        className={`flex relative flex-col justify-center  gap-10  bg-[url('../../src/assets/soil.jpg')] bg-cover p-10 min-h-screen`}
-      >  <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
+        style={{ backgroundImage: `url(${soilImg})` }}
+        className={`flex relative flex-col justify-center  gap-10 bg-cover p-10 min-h-screen`}
+      >
+        {" "}
+        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
         {/* Overlay */}
         <h1 className="flex z-10 flex-row justify-end w-3/4 font-poppins text-2xl md:text-4xl leading-10 text-white ">
           About the idea :
         </h1>
-
         <div className="flex z-10 flex-col gap-5 items-center justify-center text-center">
           <p className=" md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
             यह चैरिटी फाउंडेशन अनौपचारिक रूप से जुलाई 2019 में शुरू हुआ लेकिन
@@ -145,13 +151,15 @@ const LandingPage = memo(() => {
         </div>
       </div>
       <div
-        className={`flex relative flex-col justify-center  gap-10  bg-[url('../../src/assets/soil.jpg')] bg-cover p-10 min-h-screen`}
-      >  <div className="absolute  inset-0 bg-black opacity-40 z-0"></div>{" "}
+        style={{ backgroundImage: `url(${soilImg})` }}
+        className={`flex relative flex-col justify-center  gap-10 bg-cover p-10 min-h-screen`}
+      >
+        {" "}
+        <div className="absolute  inset-0 bg-black opacity-40 z-0"></div>{" "}
         {/* Overlay */}
         <h1 className=" font-poppins z-10 text-2xl md:text-4xl leading-10 text-white ">
           From the desk of founder:
         </h1>
-
         <img src={founderImg} alt="" className="w-60 z-10 mx-auto" />
         <div className="flex flex-col gap-5 items-center z-10 justify-center text-center">
           <p className=" md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
@@ -165,7 +173,8 @@ const LandingPage = memo(() => {
         </div>
       </div>
       <div
-        className={` flex flex-col gap-6 bg-[url('../../src/assets/clouds.png')] bg-center p-10 min-h-screen`}
+        style={{ backgroundImage: `url(${cloudsImg})` }}
+        className={` flex flex-col gap-6  bg-center p-10 min-h-screen`}
       >
         <h1 className="text-white font-poppins text-3xl md:text-4xl">
           Programmes
