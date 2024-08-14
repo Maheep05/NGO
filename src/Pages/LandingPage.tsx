@@ -7,11 +7,11 @@ import Card from "../Components/Card/Card";
 import Contact from "../Components/ContactUs/Contact";
 import Footer from "../Components/Footer/Footer";
 import founderImg from "../assets/founderpic.jpg";
-import slide1 from "../../src/assets/slide1.png";
-import slide2 from "../../src/assets/slide2.png";
-import slide3 from "../../src/assets/slide3.png";
-import slide4 from "../../src/assets/slide4.png";
-import slide5 from "../../src/assets/slide5.png";
+import slide1 from "../assets/slide1.png";
+import slide2 from "../assets/slide2.png";
+import slide3 from "../assets/slide3.png";
+import slide4 from "../assets/slide4.png";
+import slide5 from "../assets/slide5.png";
 import crowdImg from "../../src/assets/crowd.png";
 import soilImg from "../../src/assets/soil.jpg";
 import cloudsImg from "../../src/assets/clouds.png";
@@ -72,7 +72,8 @@ const LandingPage = memo(() => {
       <Navbar />
 
       <div
-        className={`${currentBackgroundImage} bg-cover bg-center md:bg-cover  min-h-screen flex flex-col items-center justify-center`}
+        style={{ backgroundImage: `url(${currentBackgroundImage})` }}
+        className={`bg-cover bg-center md:bg-cover  min-h-screen flex flex-col items-center justify-center`}
       >
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>{" "}
         {/* Overlay */}
