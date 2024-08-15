@@ -14,7 +14,10 @@ import slide4 from "../assets/slide4.png";
 import slide5 from "../assets/slide5.png";
 import crowdImg from "../../src/assets/crowd.png";
 import soilImg from "../../src/assets/soil.jpg";
+import blacksoil from "../../src/assets/blacksoil.jpg";
 import cloudsImg from "../../src/assets/clouds.png";
+import wall from "../../src/assets/wall.jpg";
+import veg from "../../src/assets/vegetables.png";
 
 const colorClasses = [slide1, slide2, slide3, slide4, slide5];
 
@@ -62,7 +65,7 @@ const LandingPage = memo(() => {
       onclick: () => console.log("hello"),
     },
     {
-      img: img3,
+      img: veg,
       text: "स्वास्थ्य",
       onclick: () => console.log("hello"),
     },
@@ -75,7 +78,7 @@ const LandingPage = memo(() => {
         style={{ backgroundImage: `url(${currentBackgroundImage})` }}
         className={`bg-cover bg-center md:bg-cover  min-h-screen flex flex-col items-center justify-center`}
       >
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-black opacity-60 z-0"></div>{" "}
         {/* Overlay */}
         <div className="relative z-10 text-center">
           <h1 className=" font-poppins text-[3.5rem] md:text-[7rem] font-medium text-white ">
@@ -91,7 +94,7 @@ const LandingPage = memo(() => {
         style={{ backgroundImage: `url(${crowdImg})` }}
         className={` flex flex-col justify-center  items-center text-center gap-20 md:gap-40  bg-cover relative p-10 min-h-screen`}
       >
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-black opacity-55 z-0"></div>{" "}
         {/* Overlay */}
         <div className="relative flex flex-col justify-center gap-20 md:gap-40  items-center z-10">
           <p className="flex flex-col gap-2 md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
@@ -117,31 +120,36 @@ const LandingPage = memo(() => {
         className={`flex relative flex-col gap-20 md:gap-40  bg-cover p-10 min-h-screen`}
       >
         {" "}
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-black opacity-60 z-0"></div>{" "}
         {/* Overlay */}
         <h1 className=" font-poppins text-2xl md:text-4xl z-10 leading-10 text-white ">
           About Us
         </h1>
-        <div className="flex flex-col gap-5 z-10 items-center justify-center text-center">
+        <div className="flex flex-col gap-10 z-10 items-center justify-center text-center">
           <p className=" md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
-            हम लोगों की मदद करने के लिए विचारों और ऊर्जा का विस्तार करते हैं
-            ताकि मेरे परिवार की सहायता से, और मेरे दोस्तों के समर्थन से हम अपने
-            संसाधनों का बेहतर उपयोग कर सकें।
+            हमें जरूरतमंद व्यक्तियों की मदद करने का सपना देखने पर गर्व है। जैसा
+            कि हम सभी जानते हैं कि भारत में बहुत सारी भारतीय आबादी गरीबी में जी
+            रही है। आंकड़ों से पता चलता है कि लाखों बच्चे अशिक्षित हैं और भूख और
+            खराब स्वास्थ्य में जी रहे हैं। साथ ही माता-पिता के बिना रहने वाले
+            बच्चों की संख्या भी दिन-ब-दिन बढ़ती जा रही है।
+          </p>
+          <p className=" md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
+            अगर हम शुरुआत नहीं करेंगे तो उनकी देखभाल कौन करेगा?
           </p>
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${soilImg})` }}
+        style={{ backgroundImage: `url(${blacksoil})` }}
         className={`flex relative flex-col justify-center  gap-10 bg-cover p-10 min-h-screen`}
       >
         {" "}
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-black opacity-60 z-0"></div>{" "}
         {/* Overlay */}
-        <h1 className="flex z-10 flex-row justify-end w-3/4 font-poppins text-2xl md:text-4xl leading-10 text-white ">
+        <h1 className="flex z-10 flex-row justify-end w-5/6 font-poppins text-2xl md:text-4xl leading-10 text-white ">
           About the idea :
         </h1>
         <div className="flex z-10 flex-col gap-5 items-center justify-center text-center">
-          <p className=" md:w-1/2 font-poppins text-lg md:text-2xl leading-10 text-white ">
+          <p className=" md:w-3/4 font-poppins text-lg md:text-2xl leading-10 text-white ">
             यह चैरिटी फाउंडेशन अनौपचारिक रूप से जुलाई 2019 में शुरू हुआ लेकिन
             जनवरी 2020 में पंजीकृत हुआ। 2019 से, हमने लोगों/बच्चों के साथ अधिक
             समय बिताने और जीवन में उनकी इच्छाओं और आकांक्षाओं को समझने की कोशिश
@@ -152,11 +160,11 @@ const LandingPage = memo(() => {
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${soilImg})` }}
+        style={{ backgroundImage: `url(${wall})` }}
         className={`flex relative flex-col justify-center  gap-10 bg-cover p-10 min-h-screen`}
       >
         {" "}
-        <div className="absolute  inset-0 bg-black opacity-40 z-0"></div>{" "}
+        <div className="absolute  inset-0 bg-black opacity-60 z-0"></div>{" "}
         {/* Overlay */}
         <h1 className=" font-poppins z-10 text-2xl md:text-4xl leading-10 text-white ">
           From the desk of founder:

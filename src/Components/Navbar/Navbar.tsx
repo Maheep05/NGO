@@ -17,16 +17,13 @@ const Navbar = () => {
             Home
           </span>
           <span className="cursor-pointer font-poppins text-lg text-white">
-            हमारे बारे में
+            About Us
           </span>
           <span className="cursor-pointer font-poppins text-lg text-white">
-            कार्यक्रमों
+            Programs
           </span>
           <span className="cursor-pointer font-poppins text-lg text-white">
-            Get Involved
-          </span>
-          <span className="cursor-pointer font-poppins text-lg text-white">
-            कहानियों
+            Contact Us
           </span>
         </div>
         <div className="md:hidden">
