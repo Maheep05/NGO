@@ -32,6 +32,10 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <span className="font-poppins md:text-lg text-white flex justify-center text-xs px-4 py-2">
+        Our website in currently in production, and exciting updates will be
+        coming soon.Stay tuned for new features and improvements!!
+      </span>
       {isOpen && (
         <div className="md:hidden flex flex-col items-center mt-2 gap-2">
           <span className="cursor-pointer font-poppins text-lg text-white">
